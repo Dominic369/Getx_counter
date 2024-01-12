@@ -9,41 +9,41 @@ class CounterController extends GetxController {
 
   void incrementCounter1() {
     logicController1 = logicController1++;
-    print('incrementCounter1 : $logicController1');
+    //print('incrementCounter1 : $logicController1');
     update(); // use update() to update counter variable on UI when increment be called
   }
 
   void incrementCounter2() {
     logicController2 = logicController2++;
-    print('incrementCounter2 : $logicController2');
+    //print('incrementCounter2 : $logicController2');
     update();
   }
 
   void decrementCounter1() {
-    if (logicController1 != 0) {
+    if (logicController1.value != 0) {
       logicController1 = logicController1--;
-      print('decrementCounter1 : $logicController1');
+      //print('decrementCounter1 : $logicController1');
       update();
     }
   }
 
   void decrementCounter2() {
-    if (logicController2 != 0) {
+    if (logicController2.value != 0) {
       logicController2 = logicController2--;
-      print('decrementCounter2 : $logicController2');
+      //print('decrementCounter2 : $logicController2');
       update();
     }
   }
 
   void resetCounter1() {
     logicController1.value = 0;
-    print('resetCounter1 : $logicController1');
+    //print('resetCounter1 : $logicController1');
     update();
   }
 
   void resetCounter2() {
     logicController2.value = 0;
-    print('resetCounter2 : $logicController2');
+    //print('resetCounter2 : $logicController2');
     update();
   }
 }

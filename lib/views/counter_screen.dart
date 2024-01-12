@@ -20,11 +20,11 @@ class CounterScreen extends StatelessWidget {
         return Scaffold(
           appBar: AppBar(
             backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-            title: Text('GetX Demo'),
+            title: const Text('GetX Demo'),
           ),
           body: Center(
             child: Padding(
-              padding: EdgeInsets.all(16),
+              padding: const EdgeInsets.all(16),
               child: Column(
                 children: [
                   /*
@@ -60,16 +60,16 @@ class CounterScreen extends StatelessWidget {
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(10.0),
                     ),
-                    child: Icon(Icons.remove),
                     onPressed: controller.decrementCounter1,
+                    child: const Icon(Icons.remove),
                   ),
-                  Gap(16),
+                  const Gap(16),
                   FloatingActionButton(
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(10.0),
                     ),
-                    child: Icon(Icons.remove),
                     onPressed: controller.decrementCounter2,
+                    child: const Icon(Icons.remove),
                   ),
                 ],
               ),
@@ -81,16 +81,16 @@ class CounterScreen extends StatelessWidget {
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(10.0),
                     ),
-                    child: Icon(Icons.autorenew),
                     onPressed: controller.resetCounter1,
+                    child: const Icon(Icons.autorenew),
                   ),
-                  Gap(16),
+                  const Gap(16),
                   FloatingActionButton(
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(10.0),
                     ),
-                    child: Icon(Icons.autorenew),
                     onPressed: controller.resetCounter2,
+                    child: const Icon(Icons.autorenew),
                   ),
                 ],
               ),
@@ -102,17 +102,17 @@ class CounterScreen extends StatelessWidget {
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(10.0),
                     ),
-                    child: Icon(Icons.add),
                     onPressed: controller.incrementCounter1,
+                    child: const Icon(Icons.add),
                   ),
-                  Gap(16),
+                  const Gap(16),
                   FloatingActionButton(
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(10.0),
                     ),
-                    child: Icon(Icons.add),
                     onPressed: controller.incrementCounter2,
                     tooltip: 'increment',
+                    child: const Icon(Icons.add),
                   ),
                 ],
               ),
